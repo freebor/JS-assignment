@@ -14,6 +14,28 @@ score.sort((x,y)=>{
 console.log(score[0]);
 
 // Number Three
-let number = [3,2,4];
-let k = 6;
-counter = 0;
+
+// this is giving me the index number of the answer
+const mostFrequent = (arr, k) => {
+    let result = [];
+    let numIndex = new Map();
+
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        let compliment = k - num;
+        
+        if (numIndex.has(compliment)) {
+            result[0] = numIndex.get(compliment);
+            result[1] = i;
+            console.log(result[0],result[1]);
+            return result;
+        }
+        numIndex.set(num, i);
+    }
+    return result;
+}
+
+arr = [3,2,4];
+k = 6;
+mostFrequent(arr, k);
+
