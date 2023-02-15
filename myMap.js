@@ -25,8 +25,8 @@ const mostFrequent = (arr, k) => {
         let compliment = k - num;
         
         if (numIndex.has(compliment)) {
-            result[0] = numIndex.get(compliment);
-            result[1] = i;
+            result[0] = compliment;
+            result[1] = num;
             console.log(result[0],result[1]);
             return result;
         }
