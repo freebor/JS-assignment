@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Greet app</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head-label">
+            <h1><b>Greet User</b><span class="small"> APP</span></h1>
+        </div>
+        <div class="flex-hold">
+            <div class="insertDetails">
+                <h2>Hello, Please enter your name!!</h2>
+                <input type="text" id="firstName" placeholder="firstName"><br>
+                <input type="text" id="lastName" placeholder="lastName"><br>
+                <button onclick="done()"> Submit </button>
+            </div>
+            <div class="displayResult">
+                <h1 id="myDate"></h1>
+                <h2 id="userDisplay"></h2>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="user.js"></script>
+</body>
+</html>
